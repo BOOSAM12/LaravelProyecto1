@@ -7,20 +7,16 @@
 @endsection
 
 @section('carrusel') 
-    <section class=" min-h-full flex justify-center items-center">
-        <article class="flex flex-row justify-center space-x-6">
-            @for ($i = 0; $i < 3; $i++)
-                @component('components.carrusel')
-                    @slot('img')
+    {{-- @for ($i = 0; $i < 3; $i++) --}}
+        @component('components.carrusel')
+            @slot('img')
                         https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbe9UKgdXD4tgLi1ldU4-cFBkZk0cxwx83-Q&s
-                    @endslot
-                    @slot('alt')
-                        carrusel{{$i}}
-                    @endslot
-                @endcomponent
-            @endfor
-        </article>
-    </section>
+            @endslot
+            @slot('alt')
+                    Imagen de laravel
+            @endslot
+        @endcomponent
+    {{-- @endfor --}}
 @endsection
 
 
